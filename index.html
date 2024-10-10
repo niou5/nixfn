@@ -3,110 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NixFN Launcher</title>
+    <title>NixFN Launcher - Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0a0a0a;
-            color: #f0f0f0;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            background-color: #1f1f1f;
-            width: 100%;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-            color: #ffffff;
-        }
-
-        section {
-            max-width: 800px;
-            width: 100%;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: #1b1b1b;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        section h2 {
-            font-size: 2em;
-            margin-bottom: 10px;
-            color: #ffffff;
-        }
-
-        section p {
-            font-size: 1.2em;
-            line-height: 1.6em;
-            color: #cccccc;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #3399FF;
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #267acc;
-        }
-
-        footer {
-            margin-top: 50px;
-            padding: 20px;
-            width: 100%;
             background-color: #111;
-            text-align: center;
-            color: #888;
+            color: white;
         }
 
-        a {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #151515;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
             color: #3399FF;
         }
 
-        a:hover {
-            text-decoration: underline;
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .hero {
+            background: url('path/to/your/splash.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .hero a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #3399FF;
+            color: white;
+            font-weight: 600;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .hero a:hover {
+            background-color: #287acc;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>NixFN Launcher</h1>
-    </header>
+    <nav>
+        <div class="logo">NixFN Launcher</div>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="legal.html">Legal</a></li>
+            <li><a href="https://discord.gg/xrYvcct7" target="_blank">Discord</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>About NixFN Launcher</h2>
-        <p>Welcome to the official NixFN Launcher project! This launcher is part of the OGFN (Official Gaming Fortnite Network) initiative. Our aim is to provide a seamless gaming experience with the latest tools for Fortnite enthusiasts.</p>
-        <p>Join our growing community on Discord to get support, share feedback, and be part of exciting new developments!</p>
-        <a class="button" href="https://discord.gg/xrYvcct7" target="_blank">Join our Discord</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to the NixFN Launcher</h1>
+        <p>Re-experience the old FN chapters with the original game feel.</p>
+        <a href="download.html">Download Latest Launcher</a>
     </section>
-
-    <section>
-        <h2>Download the Latest Launcher</h2>
-        <p>Ready to jump in? Download the latest version of the NixFN Launcher below and start enjoying an optimized Fortnite experience today.</p>
-        <a class="button" href="https://github.com/niou5/nixfn/releases/download/1.0.0/NixFN.msi" download>Download Latest Launcher</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 NixFN Launcher | Part of the OGFN Project</p>
-    </footer>
 
 </body>
 </html>
